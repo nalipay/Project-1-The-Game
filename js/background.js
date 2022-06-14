@@ -2,6 +2,7 @@ class Background {
     constructor() {
         this.x = -1800
         this.y = -900
+        let gravity = 0.2
     }
 
     draw() {

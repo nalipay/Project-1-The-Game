@@ -9,6 +9,8 @@ function setup() {
     let x = (windowWidth - width) / 2;
     let y = (windowHeight - height) / 2;
     cnv.position(x, y);
+
+
 }
 
 function draw() {
