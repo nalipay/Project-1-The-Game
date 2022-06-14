@@ -16,16 +16,32 @@ function setup() {
 function draw() {
     game.draw()
 
+    game.donuts.forEach(function(donut){
+        donut.move()
+    })
+
 }
 
 function keyPressed() {
 	if (keyCode === 38 && keyIsPressed) {
 		game.background.moveUp()
+        game.donuts.forEach(function(donut){
+            donut.moveUp()
+        })
 	} else if (keyCode === 40 && keyIsPressed) {
         game.background.moveDown()
+        game.donuts.forEach(function(donut){
+            donut.moveDown()
+        })
     } else if (keyCode === 37 && keyIsPressed) {
         game.background.moveLeft()
+        game.donuts.forEach(function(donut){
+            donut.moveLeft()
+        })
     } else if (keyCode === 39 && keyIsPressed) {
         game.background.moveRight()
+        game.donuts.forEach(function(donut){
+            donut.moveRight()
+        })
     }
 }
