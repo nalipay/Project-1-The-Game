@@ -20,10 +20,6 @@ function draw() {
         donut.move()
     })
 
-    game.sushis.forEach(function(sushi){
-        sushi.move()
-    })
-
 }
 
 function keyPressed() {
@@ -32,32 +28,20 @@ function keyPressed() {
         game.donuts.forEach(function(donut){
             donut.moveUp()
         })
-        game.sushis.forEach(function(sushi){
-            sushi.moveUp()
-        })
 	} else if (keyCode === 40 && keyIsPressed) {
         game.background.moveDown()
         game.donuts.forEach(function(donut){
             donut.moveDown()
-        })
-        game.sushis.forEach(function(sushi){
-            sushi.moveDown()
         })
     } else if (keyCode === 37 && keyIsPressed) {
         game.background.moveLeft()
         game.donuts.forEach(function(donut){
             donut.moveLeft()
         })
-        game.sushis.forEach(function(sushi){
-            sushi.moveLeft()
-        })
     } else if (keyCode === 39 && keyIsPressed) {
         game.background.moveRight()
         game.donuts.forEach(function(donut){
             donut.moveRight()
-        })
-        game.sushis.forEach(function(sushi){
-            sushi.moveRight()
         })
     }
 }
