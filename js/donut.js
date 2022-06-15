@@ -34,7 +34,7 @@ class Donut {
 		}
     }
     move() {
-        if(Math.abs(dist(this.x, this.y, this.startX, this.startY)) > 50) {
+        if(frameCount % 50 === 0) {
             this.speed = -this.speed
         }
         this.x += this.speed;

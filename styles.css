@@ -1,7 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Monofett&display=swap');
+
 body {
-    background-color: white;
+    background-color: rgb(240, 146, 146);
 }
 
 h1{
     text-align: center;
+    font-family: 'Monofett', cursive;
+    font-size: 60px;
+}
+
+.canvas-container{
+    display: flex;
+    justify-content: center;
+}
+#canvas{
+    position: absolute;
+}
+.start-image{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(244, 185, 185, 0.4);
+}
+.start{
+    all: unset;
+    width: 400px;
+    height: 400px;
 }

@@ -4,7 +4,6 @@ class Game {
         this.player = new Player()
         this.donuts = []
         this.donutImage 
-        
 
     }
     preload() {
