@@ -30,7 +30,14 @@ class Donut {
         if (dist(donutX, donutY, playerX, playerY) > 70) {
 			return false
 		} else {
-			return true
+            let donutCounter = document.querySelector('.donut-counter')
+            let countDonut = donutCounter.innerText
+
+            countDonut++
+
+            donutCounter.innerText = countDonut
+                       
+            return true
 		}
     }
     move() {

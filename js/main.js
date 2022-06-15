@@ -1,7 +1,33 @@
 const game = new Game()
 
+let gameStarted = false
+
+
+// donut counter
+/*let donutCounter = document.querySelector('.donut-counter')
+let counterPlusDonut = donut.collision()
+
+let countDonut = 0
+
+counterPlusDonut.
+    countDonut++
+
+
+function donutNumber() {
+    donutCounter.innerHTML = countDonut
+}
+
+donutNumber()
+*/
+
 function preload() {
 	game.preload()
+}
+
+function startGame() {
+    gameStarted = true
+    select(".start-image").hide()
+    
 }
 
 function setup() {
@@ -11,6 +37,7 @@ function setup() {
    // let y = (windowHeight - height) / 2;
    // cnv.position(x, y);
 
+   document.getElementsByClassName("start-image").disabled = true
 }
 
 function draw() {
@@ -23,25 +50,28 @@ function draw() {
 }
 
 function keyPressed() {
-	if (keyCode === 38 && keyIsPressed) {
-		game.background.moveUp()
-        game.donuts.forEach(function(donut){
-            donut.moveUp()
-        })
-	} else if (keyCode === 40 && keyIsPressed) {
-        game.background.moveDown()
-        game.donuts.forEach(function(donut){
-            donut.moveDown()
-        })
-    } else if (keyCode === 37 && keyIsPressed) {
-        game.background.moveLeft()
-        game.donuts.forEach(function(donut){
-            donut.moveLeft()
-        })
-    } else if (keyCode === 39 && keyIsPressed) {
-        game.background.moveRight()
-        game.donuts.forEach(function(donut){
-            donut.moveRight()
-        })
+    if(gameStarted) {
+        if (keyCode === 38 && keyIsPressed) {
+            game.background.moveUp()
+            game.donuts.forEach(function(donut){
+                donut.moveUp()
+            })
+        } else if (keyCode === 40 && keyIsPressed) {
+            game.background.moveDown()
+            game.donuts.forEach(function(donut){
+                donut.moveDown()
+            })
+        } else if (keyCode === 37 && keyIsPressed) {
+            game.background.moveLeft()
+            game.donuts.forEach(function(donut){
+                donut.moveLeft()
+            })
+        } else if (keyCode === 39 && keyIsPressed) {
+            game.background.moveRight()
+            game.donuts.forEach(function(donut){
+                donut.moveRight()
+            })
+        }
     }
+	
 }

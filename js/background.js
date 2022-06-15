@@ -11,22 +11,22 @@ class Background {
 
     moveUp() {
         if(this.y <= -50) {
-            this.y += 30
+            this.y += 50
         }
     }
     moveDown() {
          if(this.y > -1800) {
-            this.y -= 30
+            this.y -= 50
         } 
     }
     moveLeft() {
         if(this.x <= -50) {
-            this.x += 30
+            this.x += 50
         }
     }
     moveRight() {
         if(this.x > -3600) {
-            this.x -= 30
+            this.x -= 50
         }
     }
 }
