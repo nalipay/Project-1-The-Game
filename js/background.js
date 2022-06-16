@@ -7,6 +7,7 @@ class Background {
     draw() {
         image(game.backgroundImage[0].src, this.x, this.y, 4800, 2400)
         keyPressed()
+
 		}
 
     moveUp() {

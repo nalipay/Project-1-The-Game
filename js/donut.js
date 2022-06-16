@@ -36,6 +36,10 @@ class Donut {
 
             donutCounter.innerText = countDonut
 
+            if(countDonut = 10) {
+
+            }
+
             return true
 		}
     }
