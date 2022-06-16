@@ -5,13 +5,12 @@ class Donut {
         this.height = 150
         this.x = random(-1800, 3000)
         this.y = random(-900, 1500)
+        // this.x = constrain(this.donuts, -1800, 3000)
         this.startX = this.x
         this.startY = this.y
         this.speed = random(-1, 1)
-        //this.maxDistance = random(40, 70)
     }
     draw() {
-        
         image(this.image, this.x, this.y, this.width, this.height)
     }
 
@@ -26,7 +25,7 @@ class Donut {
 
         const playerX = playerInfo.x + playerInfo.width / 2
 		const playerY = playerInfo.y + playerInfo.height / 2
-
+    if(gameStarted) {
         if (dist(donutX, donutY, playerX, playerY) > 70) {
 			return false
 		} else {
@@ -36,11 +35,15 @@ class Donut {
             countDonut++
 
             donutCounter.innerText = countDonut
-                       
+
             return true
 		}
     }
+}
     move() {
+       /* if(this.x < -1800) {
+            this.speed = -this.speed
+        } */
         if(frameCount % 50 === 0) {
             this.speed = -this.speed
         }

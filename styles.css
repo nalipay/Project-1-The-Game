@@ -11,16 +11,15 @@ h1{
     font-size: 60px;
 }
 
-.canvas-container, .counter-container{
+.canvas-container, .counter-container, .info-container{
     display: flex;
     justify-content: center;
-    
 }
+
 #canvas{
     position: absolute;
-
-
 }
+
 .start-image{
     position: absolute;
     display: flex;
@@ -30,7 +29,6 @@ h1{
     height: 600px;
     background-color: rgba(244, 185, 185, 0.4);
 }
-
 .start{
     all: unset;
     width: 400px;
@@ -45,7 +43,6 @@ h1{
     position: absolute;
     width: 1200px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 200;
     font-size: 20px;
     color: rgb(240, 146, 146);
     margin-left: 80px;
@@ -53,4 +50,16 @@ h1{
 }
 .snack-counter p{
     margin-right: 10px;
+}
+
+.game-info{
+    display: flex;
+    justify-content:left;
+    align-items:flex-end;
+    width: 1200px;
+    height: 670px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin-left: 80px;
 }

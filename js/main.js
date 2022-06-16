@@ -2,24 +2,6 @@ const game = new Game()
 
 let gameStarted = false
 
-
-// donut counter
-/*let donutCounter = document.querySelector('.donut-counter')
-let counterPlusDonut = donut.collision()
-
-let countDonut = 0
-
-counterPlusDonut.
-    countDonut++
-
-
-function donutNumber() {
-    donutCounter.innerHTML = countDonut
-}
-
-donutNumber()
-*/
-
 function preload() {
 	game.preload()
 }
