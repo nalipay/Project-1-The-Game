@@ -47,9 +47,10 @@ h1{
     color: rgb(240, 146, 146);
     margin-left: 80px;
     margin-top: 10px;
+    display: flex;
 }
 .snack-counter p{
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 .game-info{

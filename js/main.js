@@ -28,11 +28,12 @@ function draw() {
     game.donuts.forEach(function(donut){
         donut.move()
     })
-   /* game.jellys.forEach(function(jelly){
-        jelly.move
-    })
-    */
 
+
+    game.jellys.forEach(function(jelly){
+        jelly.move()
+    })
+    
 }
 
 function keyPressed() {
@@ -40,22 +41,34 @@ function keyPressed() {
         if (keyCode === 38 && keyIsPressed) {
             game.background.moveUp()
             game.donuts.forEach(function(donut){
-                donut.moveUp()
+                donut.moveUp()   
+            })
+            game.jellys.forEach(function(jelly){
+                jelly.moveUp()   
             })
         } else if (keyCode === 40 && keyIsPressed) {
             game.background.moveDown()
             game.donuts.forEach(function(donut){
                 donut.moveDown()
             })
+            game.jellys.forEach(function(jelly){
+                jelly.moveDown()
+            })
         } else if (keyCode === 37 && keyIsPressed) {
             game.background.moveLeft()
             game.donuts.forEach(function(donut){
                 donut.moveLeft()
             })
+            game.jellys.forEach(function(jelly){
+                jelly.moveLeft()
+            })
         } else if (keyCode === 39 && keyIsPressed) {
             game.background.moveRight()
             game.donuts.forEach(function(donut){
                 donut.moveRight()
+            })
+            game.jellys.forEach(function(jelly){
+                jelly.moveRight()
             })
         }
     }
