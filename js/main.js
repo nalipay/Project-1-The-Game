@@ -1,6 +1,7 @@
 const game = new Game()
 
 let gameStarted = false
+let jellyStarted = false
 
 function preload() {
 	game.preload()
@@ -9,8 +10,8 @@ function preload() {
 function startGame() {
     gameStarted = true
     select(".start-image").hide()
-    
 }
+
 
 function setup() {
     let cnv = createCanvas(1200, 600)
@@ -28,7 +29,6 @@ function draw() {
     game.donuts.forEach(function(donut){
         donut.move()
     })
-
 
     game.jellys.forEach(function(jelly){
         jelly.move()

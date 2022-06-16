@@ -36,12 +36,14 @@ class Game {
             donut.move()
             donut.display()
 		})     
-
-        this.jellys.forEach(function (jelly) {
-            jelly.draw()
-            jelly.move()
-            jelly.display()
-        }) 
+        if(document.querySelector('.donut-counter').innerText >= 3) {
+            this.jellys.forEach(function (jelly) {
+                jelly.draw()
+                jelly.move()
+                jelly.display()
+            }) 
+        }
+        
 
         this.player.draw()
         
