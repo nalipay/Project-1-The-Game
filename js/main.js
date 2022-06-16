@@ -28,6 +28,10 @@ function draw() {
     game.donuts.forEach(function(donut){
         donut.move()
     })
+   /* game.jellys.forEach(function(jelly){
+        jelly.move
+    })
+    */
 
 }
 
