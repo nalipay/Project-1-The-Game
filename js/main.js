@@ -3,8 +3,12 @@ const game = new Game()
 let gameStarted = false
 let jellyStarted = false
 
+
+
+
 function preload() {
 	game.preload()
+
 }
 
 function startGame() {
@@ -20,7 +24,9 @@ function setup() {
    // let y = (windowHeight - height) / 2;
    // cnv.position(x, y);
 
-   document.getElementsByClassName("start-image").disabled = true
+    document.getElementsByClassName("start-image").disabled = true
+
+
 }
 
 function draw() {

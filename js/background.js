@@ -18,7 +18,7 @@ class Background {
     moveDown() {
          if(this.y > -1800) {
             this.y -= 50
-        } 
+        }
     }
     moveLeft() {
         if(this.x <= -50) {

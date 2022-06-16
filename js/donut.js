@@ -3,19 +3,21 @@ class Donut {
         this.image = image
         this.width = 150
         this.height = 150
+
         this.x = random(-1800, 3000)
         this.y = random(-900, 1500)
         // this.x = constrain(this.donuts, -1800, 3000)
         this.startX = this.x
         this.startY = this.y
         this.speed = random(-1, 1)
+        this.easing = 0.5
     }
     draw() {
         image(this.image, this.x, this.y, this.width, this.height)
     }
 
     moveUp() {this.y += 5}
-    moveDown() {this.y -= 5}
+    moveDown() {this.y -= 5} 
     moveLeft() {this.x += 5}
     moveRight() {this.x -= 5}
 
